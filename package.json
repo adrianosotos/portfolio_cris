@@ -1,30 +1,51 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "dependencies": {
-    "gatsby": "^2.3.34",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+	"name": "gatsby-starter-hello-world",
+	"private": true,
+	"description": "A simplified bare-bones starter for Gatsby",
+	"version": "0.1.0",
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "env-cmd .env gatsby develop",
+		"format": "prettier --write src/**/*.{js,jsx}",
+		"start": "npm run develop",
+		"serve": "gatsby serve",
+		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome": "^1.1.8",
+		"@fortawesome/fontawesome-svg-core": "^1.2.18",
+		"@fortawesome/free-brands-svg-icons": "^5.8.2",
+		"@fortawesome/free-solid-svg-icons": "^5.8.2",
+		"@fortawesome/react-fontawesome": "^0.1.4",
+		"bootstrap": "^4.3.1",
+		"gatsby": "^2.3.34",
+		"gatsby-image": "^2.0.41",
+		"gatsby-plugin-react-helmet": "^3.0.12",
+		"gatsby-plugin-sharp": "^2.0.36",
+		"gatsby-source-wordpress": "^3.0.58",
+		"gatsby-transformer-sharp": "^2.1.19",
+		"i": "^0.3.6",
+		"jquery": "^3.4.1",
+		"lodash": "^4.17.11",
+		"lodash.chunk": "^4.2.0",
+		"npm": "^6.9.0",
+		"popper.js": "^1.15.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1",
+		"react-image-lightbox": "^5.1.0",
+		"react-modal": "^3.8.1"
+	},
+	"devDependencies": {
+		"env-cmd": "^8.0.2",
+		"prettier": "^1.17.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+	},
+	"bugs": {
+		"url": "https://github.com/gatsbyjs/gatsby/issues"
+	}
 }

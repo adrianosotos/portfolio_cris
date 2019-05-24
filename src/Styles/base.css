@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+html {
+	width: 100%;
+}
+
+body {
+	font-family: 'Comfortaa', cursive;
+	margin: 0;
+	width: 100%;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.gallery {
+	margin: 20px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.item {
+	/* We center the contents of these items. You can also do this with flexbox too! */
+	display: grid;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}

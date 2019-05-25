@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import img from '../Styles/img/logo.png';
+import img from './imgs/Logo.png';
 import '../Styles/header.css';
-import DrawerToggleButton from './topdrawer/DrawerToggleButton';
+import DrawerToggleButton from './Topdrawer/DrawerToggleButton';
 
 const Header = (props) => {
 	return (

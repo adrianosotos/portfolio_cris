@@ -1,3 +1,8 @@
+require('dotenv').config({
+	path: '.env'
+});
+const path = require('path');
+
 module.exports = {
 	siteMetadata: {
 		title: 'CLR Fotos'
@@ -16,12 +21,12 @@ module.exports = {
 				hostingWPCOM: true,
 				useACF: false,
 				auth: {
-					wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-					wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-					wpcom_user: process.env.WORDPRESS_USER,
-					wpcom_pass: process.env.WORDPRESS_PASSWORD
+					wpcom_app_clientSecret: process.env.WORDPRESS_SECRET,
+					wpcom_app_clientId: process.env.WORDPRESS_CLIENTID,
+					wpcom_user: process.env.WORDPRESS_U,
+					wpcom_pass: process.env.WORDPRESS_P
 				},
-				verboseOutput: false
+				verboseOutput: true
 			}
 		},
 		'gatsby-plugin-react-helmet',

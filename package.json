@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"license": "MIT",
 	"scripts": {
-		"build": "gatsby build",
+		"build": "gatsby .env build",
 		"develop": "env-cmd .env gatsby develop",
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "npm run develop",
@@ -19,6 +19,7 @@
 		"@fortawesome/free-solid-svg-icons": "^5.8.2",
 		"@fortawesome/react-fontawesome": "^0.1.4",
 		"bootstrap": "^4.3.1",
+		"dotenv": "^8.0.0",
 		"gatsby": "^2.3.34",
 		"gatsby-image": "^2.0.41",
 		"gatsby-plugin-react-helmet": "^3.0.12",

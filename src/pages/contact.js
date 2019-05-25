@@ -14,7 +14,7 @@ const Contact = () => {
 				<div className="contact">
 					<div className="form">
 						<h1 className="form__title">Vamos manter contato?</h1>
-						<form method="post">
+						<form>
 							<input className="form__item" type="email" placeholder="Email" />
 							<input className="form__item" type="text" placeholder="Nome Completo" />
 							<textarea className="form__item-text-area" placeholder="Menssagem" />

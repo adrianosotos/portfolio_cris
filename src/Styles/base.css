@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-html {
-	width: 100%;
-}
-
 body {
 	font-family: 'Comfortaa', cursive;
+	width: 100vw;
 	margin: 0;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .container {
@@ -32,17 +31,14 @@ body {
 	}
 }
 
-.gallery {
-	margin: 20px;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.height {
+	height: 90vh;
 }
 
-.item {
-	/* We center the contents of these items. You can also do this with flexbox too! */
-	display: grid;
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
+.spacer {
+	flex-grow: 1;
 }
+
+/* .footer {
+	flex-shrink: 0;
+} */

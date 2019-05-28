@@ -1,12 +1,11 @@
 import React from 'react';
 
+import '../Styles/footer.css';
+
 const Footer = () => {
-	const style = {
-		textAlign: 'center'
-	};
 	return (
 		<div>
-			<p style={style}>Created By aSotos</p>
+			<p className="footer">Created By aSotos</p>
 		</div>
 	);
 };

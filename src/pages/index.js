@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 
 import '../Styles/base.css';
 
 import Layout from '../Components/Layout';
 import Jumbotron from '../Components/Jumbotron';
-import Gallery from '../Components/Gallery';
+import Portfolio from '../Components/Portfolio';
 
 const IndexPage = () => {
 	return (
 		<Layout>
 			<Jumbotron />
-			<Gallery />
+			<Portfolio />
 		</Layout>
 	);
 };

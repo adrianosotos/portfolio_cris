@@ -4,13 +4,13 @@ import Layout from '../Components/Layout';
 import '../Styles/form.css';
 import '../Styles/contact.css';
 import '../Styles/connections.css';
-import { faFacebookSquare, faTwitterSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faTwitterSquare, faInstagram, faBehance } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
 	return (
 		<Layout>
-			<div className="container">
+			<div className="container height">
 				<div className="contact">
 					<div className="form">
 						<h1 className="form__title">Vamos manter contato?</h1>
@@ -23,13 +23,14 @@ const Contact = () => {
 					</div>
 					<div className="connections">
 						<h2>Vamos nos conectar?</h2>
-						<a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faFacebookSquare} size="2x" />
+						<a href="https://www.behance.net/clr3008d1f0" target="_blank" rel="noopener noreferrer">
+							<FontAwesomeIcon icon={faBehance} size="2x" />
 						</a>
-						<a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faTwitterSquare} size="2x" />
-						</a>
-						<a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://www.instagram.com/crisr.fotografias/?hl=pt-br"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<FontAwesomeIcon icon={faInstagram} size="2x" />
 						</a>
 					</div>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../Styles/Gallery.css';
+import '../Styles/Image.css';
 import 'react-image-lightbox/style.css';
 
 const Image = ({ src, openLightbox, index }) => {
 	return (
-		<div>
-			<img className="item" src={src} onClick={() => openLightbox(index)} alt="portfolio_photo" />
+		<div className="image">
+			<img src={src} onClick={() => openLightbox(index)} alt="portfolio_photo" />
 		</div>
 	);
 };

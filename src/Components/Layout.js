@@ -3,6 +3,8 @@ import Header from './Header';
 import TopDrawer from './Topdrawer/TopDrawer';
 import Footer from './Footer';
 
+import '../Styles/base.css';
+
 class Layout extends React.Component {
 	state = {
 		topDrawerOpen: false
@@ -14,10 +16,11 @@ class Layout extends React.Component {
 	};
 	render() {
 		return (
-			<div>
+			<div className="height">
 				<TopDrawer show={this.state.topDrawerOpen} />
 				<Header drawClickHandler={this.drawerToggleClickHandler} />
 				{this.props.children}
+
 				<Footer />
 			</div>
 		);

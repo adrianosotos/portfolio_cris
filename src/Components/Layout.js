@@ -19,8 +19,8 @@ class Layout extends React.Component {
 			<div className="height">
 				<TopDrawer show={this.state.topDrawerOpen} />
 				<Header drawClickHandler={this.drawerToggleClickHandler} />
-				{this.props.children}
-
+				<div>{this.props.children}</div>
+				<div className="space" />
 				<Footer />
 			</div>
 		);

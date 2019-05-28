@@ -7,6 +7,7 @@
 	margin-top: 55px;
 	transform: translateY(-400%);
 	transition: transform 0.2s ease-out;
+	z-index: 3;
 }
 
 .top-drawer.open {
@@ -22,7 +23,8 @@
 }
 
 .top-drawer li {
-	margin: 1em 0;
+	margin: 0;
+	padding-bottom: 1rem;
 }
 .top-drawer a {
 	color: #333333;

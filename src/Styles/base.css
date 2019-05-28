@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: 100%;
 }
 
 .container {
@@ -32,11 +32,11 @@ body {
 }
 
 .height {
-	height: 90vh;
+	height: 100%;
 }
 
-.spacer {
-	flex-grow: 1;
+.space {
+	height: 100px;
 }
 
 /* .footer {

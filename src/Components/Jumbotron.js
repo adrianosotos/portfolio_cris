@@ -1,20 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
-import '../Styles/jumbotron.css';
+import logo from './imgs/Logo.png';
 
 const Jumbotron = () => {
 	return (
-		<div className="jumbotron paral parallax">
+		<section className="jumbotron">
 			<div className="container">
-				<h1 className="jumbotron__title">CR Fotografia</h1>
-				<p className="lead">
-					<Link className="jumbotron__button" to="/contact" role="button">
-						Entre em Contato
-					</Link>
-				</p>
+				<img className="jumbotron__logo  animated rotateIn" src={logo} alt="logo" />
+				<p className="jumbotron__title animated pulse">Cris Lima Fotografia</p>
 			</div>
-		</div>
+		</section>
 	);
 };
 

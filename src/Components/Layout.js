@@ -1,30 +1,38 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Header from './Header';
 import TopDrawer from './Topdrawer/TopDrawer';
 import Footer from './Footer';
+import Backdrop from './Backdrop';
 
-import '../Styles/base.css';
+import '../Styles/_styles.scss';
 
-class Layout extends React.Component {
-	state = {
-		topDrawerOpen: false
-	};
-	drawerToggleClickHandler = () => {
-		this.setState((prevState) => {
-			return { topDrawerOpen: !prevState.topDrawerOpen };
-		});
-	};
-	render() {
-		return (
-			<div className="height">
-				<TopDrawer show={this.state.topDrawerOpen} />
-				<Header drawClickHandler={this.drawerToggleClickHandler} />
-				<div>{this.props.children}</div>
-				<div className="space" />
-				<Footer />
-			</div>
-		);
-	}
+if (typeof window !== 'undefined') {
+	// eslint-disable-next-line global-require
+	require('smooth-scroll')('a[href*="#"]');
 }
+
+const Layout = ({ children }) => {
+	const [ topDrawerOpen, setTopDrawerOpen ] = useState(false);
+
+	const drawerToggleClickHandler = () => {
+		setTopDrawerOpen(!topDrawerOpen);
+	};
+	const backdropClickHandler = () => {
+		setTopDrawerOpen(false);
+	};
+	let backDrop;
+	if (topDrawerOpen) {
+		backDrop = <Backdrop click={backdropClickHandler} />;
+	}
+	return (
+		<div>
+			<TopDrawer show={topDrawerOpen} />
+			{backDrop}
+			<Header drawClickHandler={drawerToggleClickHandler} />
+			{children}
+			<Footer />
+		</div>
+	);
+};
 
 export default Layout;

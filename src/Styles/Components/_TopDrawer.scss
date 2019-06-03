@@ -1,17 +1,19 @@
 .top-drawer {
+	height: 100%;
 	background: white;
-	box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 30%;
+	box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
 	position: fixed;
-	margin-top: 55px;
-	transform: translateY(-400%);
-	transition: transform 0.2s ease-out;
-	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 60%;
+	max-width: 400px;
+	z-index: 200;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-out;
 }
 
 .top-drawer.open {
-	transform: translateY(-3%);
+	transform: translateX(0);
 }
 
 .top-drawer ul {

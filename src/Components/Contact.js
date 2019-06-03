@@ -1,17 +1,13 @@
 import React from 'react';
-import Layout from '../Components/Layout';
 
-import '../Styles/form.css';
-import '../Styles/contact.css';
-import '../Styles/connections.css';
-import { faFacebookSquare, faTwitterSquare, faInstagram, faBehance } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faBehance } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
 	return (
-		<Layout>
-			<div className="container height">
-				<div className="contact">
+		<section id="contact" className="scroll-snapping-container-section">
+			<div className="contact">
+				<div className="container">
 					<div className="form">
 						<h1 className="form__title">Vamos manter contato?</h1>
 						<form>
@@ -36,7 +32,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</Layout>
+		</section>
 	);
 };
 

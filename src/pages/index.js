@@ -1,16 +1,24 @@
-import React, { cloneElement } from 'react';
-
-import '../Styles/base.css';
+import React, { useEffect, useState } from 'react';
 
 import Layout from '../Components/Layout';
 import Jumbotron from '../Components/Jumbotron';
-import Portfolio from '../Components/Portfolio';
+import Contact from '../Components/Contact';
+import About from '../Components/About';
 
 const IndexPage = () => {
+	const [ className, setClassName ] = useState('hidden');
+	const handleScroll = () => {
+		// console.log(document.documentElement.scrollTop);
+		if (document.documentElement.scrollTop > 150) {
+			setClassName('fade-in');
+		}
+	};
+	useEffect(() => (window.onscroll = () => handleScroll()), []);
 	return (
 		<Layout>
 			<Jumbotron />
-			<Portfolio />
+			<About className={className} />
+			<Contact />
 		</Layout>
 	);
 };

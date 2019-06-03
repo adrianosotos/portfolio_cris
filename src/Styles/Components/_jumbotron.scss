@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+.jumbotron {
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center; /* Centering y-axis */
+	align-items: center; /* Centering x-axis */
+}
+
+.jumbotron__logo {
+	height: 350px;
+	width: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+}
+
+@media (min-width: 576px) {
+	.jumbotron {
+		padding: 4rem 2rem;
+	}
+}
+
+.jumbotron__title {
+	color: rgba(4, 65, 105, 0.836);
+	font-size: 5rem;
+	font-weight: 800;
+	font-family: 'Permanent Marker', cursive;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+@-webkit-keyframes rotateIn {
+	from {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: rotate3d(0, 0, 1, -200deg);
+		transform: rotate3d(0, 0, 1, -200deg);
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes rotateIn {
+	from {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: rotate3d(0, 0, 1, -200deg);
+		transform: rotate3d(0, 0, 1, -200deg);
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+.rotateIn {
+	-webkit-animation-name: rotateIn;
+	animation-name: rotateIn;
+}

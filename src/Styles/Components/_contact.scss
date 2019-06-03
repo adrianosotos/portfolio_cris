@@ -1,0 +1,15 @@
+.contact {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	padding-top: 100px;
+	padding-bottom: 5rem;
+	position: relative;
+	background: #f12711; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#f12711,
+		#f5af19
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

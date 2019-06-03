@@ -3,8 +3,6 @@ import { graphql } from 'gatsby';
 import Lightbox from 'react-image-lightbox';
 import Image from '../Components/Image';
 
-import 'react-image-lightbox/style.css';
-import '../Styles/Gallery.css';
 import Layout from '../Components/Layout';
 
 export const query = graphql`

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import '../../Styles/TopDrawer.css';
-
 const TopDrawer = (props) => {
 	let drawerClasses = 'top-drawer';
 	if (props.show) {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import '../Styles/Image.css';
 import 'react-image-lightbox/style.css';
 
 const Image = ({ src, openLightbox, index }) => {

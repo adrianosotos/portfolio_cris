@@ -1,64 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-html {
-	height: 100vh;
+* {
+	box-sizing: border-box;
 }
 
 body {
 	font-family: 'Comfortaa', cursive;
-	width: 100%;
 	margin: 0;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-.main-content {
-	flex-grow: 1;
 }
 
 .container {
+	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
 @media (min-width: 768px) {
 	.container {
-		width: 750px;
+		max-width: 720px;
 	}
 }
+
 @media (min-width: 992px) {
 	.container {
-		width: 970px;
+		max-width: 960px;
 	}
 }
+
 @media (min-width: 1200px) {
 	.container {
-		width: 1170px;
+		max-width: 1140px;
 	}
 }
-
-.full-height {
-	height: 100%;
-}
-/* .footer {
-	flex-shrink: 0;
-} */
-
-// .scroll-snapping-container {
-// 	overflow: scroll;
-// 	height: 100vh;
-// 	scroll-snap-type: mandatory;
-// 	scroll-snap-points-y: repeat(100vh);
-// 	scroll-snap-type: y mandatory;
-// }
-
-// .scroll-snapping-container-section {
-// 	height: 100vh;
-// 	scroll-snap-align: start;
-// 	position: relative;
-// 	display: flex;
-// 	flex-direction: column;
-// }

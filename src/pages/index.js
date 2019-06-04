@@ -7,13 +7,14 @@ import About from '../Components/About';
 
 const IndexPage = () => {
 	const [ className, setClassName ] = useState('hidden');
-	const handleScroll = () => {
-		// console.log(document.documentElement.scrollTop);
-		if (document.documentElement.scrollTop > 150) {
+	const scroll = () => {
+		if (document.documentElement.scrollTop > 430) {
 			setClassName('fade-in');
 		}
 	};
-	useEffect(() => (window.onscroll = () => handleScroll()), []);
+	useEffect(() => {
+		window.onscroll = () => scroll();
+	}, []);
 	return (
 		<Layout>
 			<Jumbotron />

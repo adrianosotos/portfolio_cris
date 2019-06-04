@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = ({ className }) => {
 	return (
-		<section id="about" className="scroll-snapping-container-section">
+		<section id="about">
 			<div className="container">
 				<h1 className="about__title">Sobre</h1>
 				<div className="about">
@@ -12,8 +12,7 @@ const About = ({ className }) => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 						</p>
 					</div>
 					<div className={`about__section ${className} two`}>

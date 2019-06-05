@@ -8,7 +8,11 @@ import About from '../Components/About';
 const IndexPage = () => {
 	const [ className, setClassName ] = useState('hidden');
 	const scroll = () => {
-		if (document.documentElement.scrollTop > 430) {
+		if (
+			(window.scrollY ||
+				window.pageYOffset ||
+				document.body.scrollTop + ((document.documentElement && document.documentElement.scrollTop) || 0)) > 430
+		) {
 			setClassName('fade-in');
 		}
 	};
